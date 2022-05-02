@@ -15,61 +15,63 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="paginaPrincipala.css" />
+    <link rel="stylesheet" href="PaginaPrincipala.css" />
   </head>
-  <body>
-    <div class="lista titlu h1"> Magazine </div>
+  <body id="body">
+    <div class="listaTitlu h1">Magazine</div>
+    <div class="gridCards">
 
-    <div class="row justify-content-around">
-    <div class="row row-cols-12 row-cols-sm-2 g-1">
-        <div class="col">
-            <div class="card mb-3" style="width: 18rem;">
-                <div class="row g-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Magazin 1</h5>
-                    </div>
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <p class="card-text">5/48 produse</p>
-                    </div>
-                  </div>
-                </div>
+    <!-- Card_Editabil     -->
+        <div class="test" id="edit">
+            <div class="card card-input">
+              <div class="div-magazin">
+                <input type="text" class="input-magazin" id="inputMagazin"/>
               </div>
-        </div>
-        <div class="col">
-            <div class="card mb-3" style="max-width: 240px">
-                <div class="row g-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Magazin 2</h5>
-                    </div>
-                  <div class="col-md-4">
-                    <img src="..." class="img-fluid rounded-start" alt="..." />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <p class="card-text">5/48 produse</p>
-                    </div>
-                  </div>
-                </div>
+              <div class="div-mic">
+                <button class="btn btn-input" id="testButton">
+                  <i class="bi bi-plus-lg"></i>
+                </button>
+                <div class="div-numar-produse">0/0 produse</div>
               </div>
-        </div>
-        <div class="stores collapse show" id="stores">
-            <div class="card mb-3" style="max-width: 245px">
-                <div class="row g-0">
-                    <div class="col-md-8">
-                      <div class="card-body">
-                        <input type="button" value="+" class="btn btn-primary" />
-                      </div>
-                    </div>
-                </div>
             </div>
-        </div>
-      </div>
-      </div>
-    </div>
-    </div>
+            <script>
+              const card = document.getElementById("edit");
+      
+              /*sterge cardul curent */
+              function removeCard() {
+                card.remove();
+              }      
+            </script>
+            <div>
+              <button onclick="removeCard()" class="btn-ics">
+                <i class="bi-x-circle"></i>
+              </button>
+            </div>
+          </div>
+   
+
+    <!-- <input id="userInput"; type="text"; placeholder="introdu textul dorit"/>
+    <button type="button" onclick="butonAdaugare()"; -->
+
+
+<!-- Card_Magazin -->
+          <div class="card">
+            <button class="btn btn btn-light">
+              <div class="div-magazin" id="titluMagazin"><p>asa</p></div>
+              <div class="div-mic">
+                <img src="..." class="card-img-top div-imagine" alt="..." />
+                <div class="div-numar-produse">5/48 produse</div>
+              </div>
+            </button>
+          </div>
+
+<!-- Card_ADD -->
+          <div class="div-buton card">
+            <button class="btn btn-light">
+              <i class="bi bi-plus-lg"></i>
+            </button>
+          </div>
+
+     </div>
   </body>
 </html>

@@ -1,26 +1,7 @@
-.listaTitlu {
-    text-align: center;
-  }
-  .card-title {
-    text-align: center;
-  }
-  .card-text {
-    text-align: right;
-  }
-  .card-body {
-    text-align: center;
-  }
-  .gridCards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 150px);
-    grid-gap: 25px;
-    justify-content: center;
-  }
-  .card {
-    border: none;
+.card {
+    margin: 10px;
+    border-color: transparent;
 }
-
-/*cod_card*/
 .btn-light {
     font-size:50px;
     color: gray;
