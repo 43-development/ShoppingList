@@ -9,6 +9,23 @@
 function Card(options) {
   var card = document.createElement("div");
   if (options.type === "edit") {
+      card.innerHTML =` <div class="card card-input">
+      <div class="div-magazin">
+        <input type="text" class="input-magazin" id="inputMagazin" value="${options.title}"/>
+
+      </div>
+      <div class="div-mic">
+        <button class="btn btn-input" id="testButton">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+        <div class="div-numar-produse">${options.checkedCount}/${options.productCount} produse</div>
+      </div>
+    </div>
+    <div>
+      <button onclick="removeCard()" class="btn-ics">
+        <i class="bi-x-circle"></i>
+      </button>
+    </div>`
     card.classList.add("test");
   } else if (options.type === "readonly") {
   
