@@ -11,7 +11,15 @@ function Card(options) {
   if (options.type === "edit") {
     card.classList.add("test");
   } else if (options.type === "readonly") {
+  
     card.classList.add("card");
+    card.innerHTML = `        <button class="btn btn btn-light">
+    <div class="div-magazin" id="titluMagazin"><p>${options.title}</p></div>
+    <div class="div-mic">
+      <img src="${options.icon}" class="card-img-top div-imagine" alt="..." />
+      <div class="div-numar-produse">${options.checkedCount}/${options.productCount} produse</div>
+    </div>
+  </button>`
   } else if (options.type === "add") {
     card.classList.add("card", "div-buton");
     card.innerHTML= `<button class="btn btn-light"> <i class="bi bi-plus-lg"></i>
