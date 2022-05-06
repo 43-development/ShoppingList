@@ -1,137 +1,48 @@
-// Salvați stadiul curent al cardului la orice click în afara lui, și afișați cardul de adăugare (cel cu +)
-
-var body = document.getElementById("body");
-var titluMagazin = document.getElementById("titluMagazin");
-var inputMagazin = document.getElementById("inputMagazin");
-var testButton = document.getElementById("testButton");
-
-
-testButton.addEventListener("click", function myFunction() {
-    // Select first child element:
-    const element = document.getElementById("titluMagazin").children[0];
-    
-    // Create a new text node:
-    const newNode = document.createElement("Water");
-    
-    // Replace the text node:
-    element.replaceChild(newNode, element.childNodes[0]);
-    });
-//document.getElementById('titluMagazin').innerHTML = document.getElementById('inputMagazin').value;
-
-//titluMagazin.appendChild(document.createTextNode(inputMagazin.value));
-
-//titluMagazin.insertAdjacentHTML("beforeend", inputMagzin.value);
-
-/*const newElement = document.createElement("p");
-newElement.innerHTML = inputMagzin.value;
-paragraf.appendChild(newElement);*/
-
-//  const elementHTML = '<div class="div-magazin" id="titluMagazin">' + inputMagzin.value + '</div>';
-//  titluMagazin.insertAdjacentHTML("beforeend", elementHTML);
-
- 
-
-// var divMagazin = document.createElement("div");
-// divMagazin.innerHTML = `<p>${inputMagzin.value}</p>`;
-// inputMagazin.appendChild(divMagazin);
-
-
-
-
-
-
-// function butonAdaugare () {
-//     var el_nou = document.createElement("div");
-//     var camp = document.getElementById('userInput')
-//     el_nou.innerHTML = camp.value;
-//     var element = document.getElementById('TitluMagazin')
-//     element.after(el_nou);
-//     });
-  
-    
-
-
-
-// function saveTitluMagazin() {
-//     localStorage.setItem("titluMagazin", inputMagazin.innerHTML);
+// options e un obiect de forma:
+// {
+//    type - add / readonly / edit
+//    title - titlul cardului
+//    productCount - numarul de produse din lista pentru acel magazin
+//    checkedCount - numarul de produse bifate din lista pentru acel magazin
+//    icon - imaginea magazinului
 // }
+function Card(options) {
+  var card = document.createElement("div");
+  if (options.type === "edit") {
+    card.classList.add("test");
+  } else if (options.type === "readonly") {
+    card.classList.add("card");
+  } else if (options.type === "add") {
+    card.classList.add("card", "div-buton");
+  }
+  return card;
+}
 
+document.body.appendChild(
+  Card({
+    type: "add",
+  })
+);
+// returneaza un card de adaugare
 
+document.body.appendChild(
+  Card({
+    type: "readonly",
+    title: "Kaufland",
+    productCount: 10,
+    checkedCount: 5,
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kaufland_201x_logo.svg/440px-Kaufland_201x_logo.svg.png",
+  })
+);
+// returneaza un card cu kaufland readonly
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-document.body.addEventListener('click', function (e) {
-    //if (document.getElementById('clickbox').contains(e.target)) {
-        // if(!document.getElementsByClassName("div-buton")){                                                                                                      //daca NU e deja adaugat addCard in document
-        var tree = document.getElementById('clickbox');
-        tree.insertAdjacentHTML('afterend', '<div class="div-buton card"><button class="btn btn-light"><i class="bi bi-plus-lg"></i></button></div>');              //adaugare card addCard (.div-buton)
-   // }
-})
-*/
-
-
-
-/*function clickTime() {
-    var start, end, diff;
-    var clickTime = 500;
-    var longClick = new CustomEvent('longclick');
-    var divCard = document.querySelector('.test');
-
-    document.body.addEventListener('longclick', function (event) {
-        var q = document.getElementById('clicktime');
-        q.innerHTML = diff / 1000 + 's';
-        q.style.color = '#00E676';
-    });
-
-    divCard.onmousedown = function () {
-        start = Date.now();
-
-        divCard.onmouseup = function () {
-            end = Date.now();
-            diff = (end - start) + 1;
-            if (diff > clickTime) {                                                                                                     //LongClick activ => EDIT CARD
-                document.body.createElement("<span>"longClick"</span>");
-            } else {                                                                                                                    //ShortClick activ => switch la pagina Magazin"X".html
-                var q = document.getElementById('clicktime');
-                q.innerHTML = diff / 1000 + 's';
-                q.style.color = '#F44336';
-            }
-        }
-    }
-}*/
+document.body.appendChild(
+  Card({
+    type: "edit",
+    title: "Kaufland",
+    productCount: 10,
+    checkedCount: 5,
+    icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kaufland_201x_logo.svg/440px-Kaufland_201x_logo.svg.png",
+  })
+);
+// returneaza un card cu kaufland în modul de editare

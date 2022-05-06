@@ -20,58 +20,54 @@
   <body id="body">
     <div class="listaTitlu h1">Magazine</div>
     <div class="gridCards">
-
-    <!-- Card_Editabil     -->
-        <div class="test" id="edit">
-            <div class="card card-input">
-              <div class="div-magazin">
-                <input type="text" class="input-magazin" id="inputMagazin"/>
-              </div>
-              <div class="div-mic">
-                <button class="btn btn-input" id="testButton">
-                  <i class="bi bi-plus-lg"></i>
-                </button>
-                <div class="div-numar-produse">0/0 produse</div>
-              </div>
-            </div>
-            <script>
-              const card = document.getElementById("edit");
-      
-              /*sterge cardul curent */
-              function removeCard() {
-                card.remove();
-              }      
-            </script>
-            <div>
-              <button onclick="removeCard()" class="btn-ics">
-                <i class="bi-x-circle"></i>
-              </button>
-            </div>
+      <!-- Card_Editabil     -->
+      <div class="test" id="edit">
+        <div class="card card-input">
+          <div class="div-magazin">
+            <input type="text" class="input-magazin" id="inputMagazin" />
           </div>
-   
-
-    <!-- <input id="userInput"; type="text"; placeholder="introdu textul dorit"/>
-    <button type="button" onclick="butonAdaugare()"; -->
-
-
-<!-- Card_Magazin -->
-          <div class="card">
-            <button class="btn btn btn-light">
-              <div class="div-magazin" id="titluMagazin"><p>asa</p></div>
-              <div class="div-mic">
-                <img src="..." class="card-img-top div-imagine" alt="..." />
-                <div class="div-numar-produse">5/48 produse</div>
-              </div>
-            </button>
-          </div>
-
-<!-- Card_ADD -->
-          <div class="div-buton card">
-            <button class="btn btn-light">
+          <div class="div-mic">
+            <button class="btn btn-input" id="testButton">
               <i class="bi bi-plus-lg"></i>
             </button>
+            <div class="div-numar-produse">0/0 produse</div>
           </div>
+        </div>
+        <script>
+          const card = document.getElementById("edit");
 
-     </div>
+          /*sterge cardul curent */
+          function removeCard() {
+            card.remove();
+          }
+        </script>
+        <div>
+          <button onclick="removeCard()" class="btn-ics">
+            <i class="bi-x-circle"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- <input id="userInput"; type="text"; placeholder="introdu textul dorit"/>
+    <button type="button" onclick="butonAdaugare()"; -->
+
+      <!-- Card_Magazin -->
+      <div class="card">
+        <button class="btn btn btn-light">
+          <div class="div-magazin" id="titluMagazin"><p>asa</p></div>
+          <div class="div-mic">
+            <img src="..." class="card-img-top div-imagine" alt="..." />
+            <div class="div-numar-produse">5/48 produse</div>
+          </div>
+        </button>
+      </div>
+
+      <!-- Card_ADD -->
+      <div class="div-buton card">
+        <button class="btn btn-light">
+          <i class="bi bi-plus-lg"></i>
+        </button>
+      </div>
+    </div>
   </body>
 </html>
