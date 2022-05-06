@@ -14,6 +14,8 @@ function Card(options) {
     card.classList.add("card");
   } else if (options.type === "add") {
     card.classList.add("card", "div-buton");
+    card.innerHTML= `<button class="btn btn-light"> <i class="bi bi-plus-lg"></i>
+  </button>`
   }
   return card;
 }
@@ -24,6 +26,8 @@ document.body.appendChild(
   })
 );
 // returneaza un card de adaugare
+
+
 
 document.body.appendChild(
   Card({
