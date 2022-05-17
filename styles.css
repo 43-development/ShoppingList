@@ -138,11 +138,23 @@ html, body {
     width: min-content;
 }
 
+.store-header {
+    background-color: orange;
+}
 
+.store-content {
+    background-color: greenyellow;
+}
 
-/* .div-buton 
- border: 1px solid black;
-border-radius: 20%;
-width: min-content;
-height: min-content;
- em
+.store-add-product {
+    background-color: cyan;
+}
+
+.shopping-cart {
+    background-color: pink;
+}
+
+.store-image {
+    width: 35px;
+    height: 35px;
+}
