@@ -1,160 +1,183 @@
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 .listaTitlu {
-    text-align: center;
-  }
-  .card-title {
-    text-align: center;
-  }
-  .card-text {
-    text-align: right;
-  }
-  .card-body {
-    text-align: center;
-  }
-  .gridCards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 150px);
-    grid-gap: 25px;
-    justify-content: center;
-  }
-  .card {
-    border: none;
+  text-align: center;
+}
+.card-title {
+  text-align: center;
+}
+.card-text {
+  text-align: right;
+}
+.card-body {
+  text-align: center;
+}
+.gridCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-gap: 25px;
+  justify-content: center;
+}
+.card {
+  border: none;
 }
 
 /*cod_card*/
 .btn-light {
-    font-size:50px;
-    color: gray;
-    border-radius: 15px;
-    border: 2px solid black;
-    width: 3em;
-    height: 2em;
+  font-size: 50px;
+  color: gray;
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 3em;
+  height: 2em;
 }
 
 .btn-light:hover {
-    font-size:50px;
-    color: gray;
-    border-radius: 15px;
-    border: 2px solid black;
+  font-size: 50px;
+  color: gray;
+  border-radius: 15px;
+  border: 2px solid black;
 }
 
 .bi {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .div-magazin {
-    
-    font-size:15px;
-    color:black;
-    font-weight: bold;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
 }
 
 .div-imagine {
-    display: flex;
-    background-color: brown;
-    border-radius: 10px;
-    font-size:15px;
-    color:black;
-    font-weight: bold;
-    width: 55px;
-    height: 55px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  background-color: brown;
+  border-radius: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
 }
 
 .div-numar-produse {
-    display: flex;
-    font-size:13px;
-    color:black;
-    font-weight: bold;
-    width: 55px;
-    height: 55px;
-    align-items: center;
+  display: flex;
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+  width: 55px;
+  height: 55px;
+  align-items: center;
 }
 
 .div-mic {
-    margin-top: 5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
+  margin-top: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
 }
-
 
 .card-input {
-    display: flex;
-    font-size:50px;
-    color: gray;
-    border-radius: 15px;
-    border: 2px solid black;
-    width: 3em;
-    height: 2em;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  font-size: 50px;
+  color: gray;
+  border-radius: 15px;
+  border: 2px solid black;
+  width: 3em;
+  height: 2em;
+  justify-content: center;
+  align-items: center;
 }
 
-
 .btn-input {
-    display: flex;
-    font-size:50px;
-    background-color: gray;
-    border-radius: 10px;
-    font-size:15px;
-    color:black;
-    font-weight: bold;
-    width: 55px;
-    height: 55px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  font-size: 50px;
+  background-color: gray;
+  border-radius: 10px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  width: 55px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
 }
 
 .input-magazin {
-    border-color: rgb(52, 180, 255);
-    border-radius: 15px;
-    width:130px;
+  border-color: rgb(52, 180, 255);
+  border-radius: 15px;
+  width: 130px;
 }
 
-
-.btn-ics {  
-    display: flex;
-    border-radius: 15px;
-    position: absolute;
-    margin:0;
-    padding:0;
-    width: 17px;
-    height: 17px;
-    background-color: red;
-    color: white;
-    right: 0;
-    top: 0;
-    justify-content: center;    
-    align-items: center;
+.btn-ics {
+  display: flex;
+  border-radius: 15px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 17px;
+  height: 17px;
+  background-color: red;
+  color: white;
+  right: 0;
+  top: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .test {
-    position: relative;
-    width: min-content;
+  position: relative;
+  width: min-content;
 }
 
-.store-header {
-    background-color: orange;
+.store-header,
+.store-title {
+  background-color: orange;
+  display: flex;
+}
+
+.store-title {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
 }
 
 .store-content {
-    background-color: greenyellow;
+  background-color: greenyellow;
 }
 
 .store-add-product {
-    background-color: cyan;
+  background-color: cyan;
 }
 
 .shopping-cart {
-    background-color: pink;
+  background-color: pink;
 }
 
 .store-image {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
+}
+
+.store-add-product {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
+
+.shopping-cart {
+  position: absolute;
+  bottom: 10px;
+  right: 150px;
+}
+
+.product-remove,
+.product-cart {
+  display: flex;
 }
