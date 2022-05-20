@@ -181,3 +181,7 @@ body {
 .product-cart {
   display: flex;
 }
+
+.bi-arrow-left-short {
+    font-size: 40px;
+}
