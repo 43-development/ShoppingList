@@ -1,7 +1,7 @@
 function PlusButton(options) {
     const rootElement = document.createElement("button");
 
-    rootElement.classList.add("btn", "btn-outline-primary");
+    rootElement.classList.add("btn", "btn-outline-secondary");
     rootElement.innerHTML = `
             <i class="bi bi-plus"></i>
           `;

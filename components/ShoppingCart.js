@@ -6,7 +6,7 @@ function ShoppingCart(options) {
     <button type="button" class="btn btn-primary position-relative">
       <i class="bi bi-cart3"></i>
       <span
-        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        // class="position-absolute top-100 start-100 translate-middle badge rounded-pill bg-danger"
         >${options.checkedCount}</span>
     </button>
           `;

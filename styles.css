@@ -152,11 +152,11 @@ body {
 }
 
 .store-add-product {
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 
 .shopping-cart {
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .store-image {
@@ -168,13 +168,14 @@ body {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 8em;
+  width: 100%;
 }
 
 .shopping-cart {
   position: absolute;
-  bottom: 10px;
-  right: 150px;
+  bottom: 20px;
+  right: 20px;
+
 }
 
 .product-remove,
@@ -185,3 +186,49 @@ body {
 .bi-arrow-left-short {
     font-size: 40px;
 }
+
+.btn.btn-outline-secondary {
+  width:70%;
+  border-radius: 20px;
+  border-width: 3px;
+  margin-left: 50px;
+  padding: 0px;
+
+}
+
+.bi.bi-plus {
+font-size: 40px;
+font-style: bolder;
+
+}
+
+.bi-mic-fill {
+  font-size: 40px;
+  /* background-color: blueviolet;  */
+  margin-left: 30px;
+  color: #0d6efd;
+
+}
+
+.btn.btn-primary.position-relative {
+border-radius: 50%;
+width: 80px;
+height: 80px;
+
+}
+
+.bi-cart3 {
+  font-size: 40px;
+  /* background-color: chartreuse;
+  /* padding-right: 5px;
+  padding-left: 5px;
+} */ 
+/* .position-absolute.top-100.start-100.translate-middle.badge.rounded-pill.bg-danger {
+  position: absolute;
+  margin-bottom: 100px;
+  margin-right: 10px;
+} */
+
+/* .badge.rounded-pill.bg-danger{
+  vertical-align: right: 20%;
+} */
