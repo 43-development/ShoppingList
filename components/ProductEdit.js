@@ -5,7 +5,7 @@ function ProductEdit(options) {
     rootElement.classList.add("product", "product-edit");
     rootElement.innerHTML = `
             <div class="product-icon"></div>
-            <input class="product-name-input" value="" />
+            <input class="product-name-input" value="${options.name}" />
           `;
    
     return rootElement;
