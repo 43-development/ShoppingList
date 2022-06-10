@@ -12,4 +12,3 @@ const storesScreen = StoresScreen({
 })
 
 document.body.appendChild(storesScreen)
-
