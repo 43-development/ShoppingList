@@ -1,0 +1,103 @@
+.reactions {
+    display:flex;
+    justify-content: space-around;
+}
+
+hr.solid {
+    border-top: 0.1px solid rgb(187, 187, 187);
+}
+
+.reactions div{
+    vertical-align: middle;
+    justify-content: center;
+    
+}
+
+.large-avatar {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+}
+
+.account, .comment {
+    display: flex;
+    flex-direction: row;
+}
+
+.account {
+    align-items: center;
+}
+
+.account > h2 {
+    display: inline-block;
+    flex: 1;
+    font-size: small;
+    align-self: center;
+    vertical-align: center;
+    margin-left: 5px;
+}
+
+.account > div {
+    align-self: center;
+    text-align: right;
+
+}
+
+.actions {
+    display: flex;
+    margin-left: 25px;
+    text-align: left;
+    padding: 5px;
+    
+}
+
+.small-avatar {
+    width: 45px;
+    height: 45px;
+    display: flex;
+}
+.actions > div {
+    margin-right: 10px;
+    text-align: left;
+    color: grey
+}
+
+
+.comment-content {
+    border-radius: 20px;
+    display: inline-block;
+    font-size: small;
+    align-self: center;
+    vertical-align: center;
+    margin-left: 15px;
+    background-color: rgba(224, 224, 224, 0.724);
+    padding: 10px;
+}
+
+.user, .reply {
+    display: flex;
+    font-size: small;
+    align-self: center;
+    vertical-align: center;
+}
+.user > div {
+    margin-left: 10px;
+}
+
+.header {
+    display: flex;
+    background-color: #4267B2;
+    color: white;
+    align-self: center;
+}
+
+.header > div {
+    font-size: medium;
+    margin: auto;
+}
+
+.reactionscount {
+    align-items: ;
+    justify-content: left;
+    display: flex;
+}
