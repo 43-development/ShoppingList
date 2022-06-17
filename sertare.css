@@ -38,9 +38,12 @@ hr.solid {
 }
 
 .account > div {
-    align-self: center;
-    text-align: right;
+    flex: 1;
+    margin-left: 5px;
+}
 
+.account > div > * {
+    margin: 0 auto;
 }
 
 .actions {
